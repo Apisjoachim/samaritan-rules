@@ -1,0 +1,40 @@
+{
+  "version": 1,
+  "rules": [
+    {
+      "id": "lucky_patcher",
+      "name": "Lucky Patcher (patch d'apps / licence)",
+      "severity": "critical",
+      "strings": ["LuckyPatcher", "com.dimonvideo.luckypatcher", "chelpus", "patch_license"],
+      "hex": []
+    },
+    {
+      "id": "xposed",
+      "name": "Framework Xposed (injection de code)",
+      "severity": "high",
+      "strings": ["de.robv.android.xposed", "XposedBridge", "xposedinstalled"],
+      "hex": []
+    },
+    {
+      "id": "magisk",
+      "name": "Magisk (root)",
+      "severity": "high",
+      "strings": ["magisk", "/sbin/.magisk", "MAGISKHIDE", "com.topjohnwu.magisk"],
+      "hex": []
+    },
+    {
+      "id": "gameguardian",
+      "name": "GameGuardian (triche mémoire)",
+      "severity": "high",
+      "strings": ["GameGuardian", "ca.crystalgeeks.gameguardian"],
+      "hex": []
+    },
+    {
+      "id": "stalkerware",
+      "name": "Stalkerware connu (Cerberus / mSpy)",
+      "severity": "critical",
+      "strings": ["com.cerberusapp", "mspy", "monitor.mobileapp", "keylogger"],
+      "hex": []
+    }
+  ]
+}
